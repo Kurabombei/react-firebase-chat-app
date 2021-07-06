@@ -36,9 +36,8 @@ const Chat = () => {
         <Container>
             <Grid container
                   justify={"center"}
-                  style={{height: window.innerHeight - 70, marginTop: 20}}>
+                  style={{height: window.innerHeight - 70, paddingTop: 20}}>
                 <div className={"chat-box"} style={{width:'80%', height:'70vh', border: '1px solid gray', overflowY: 'auto'}}>
-                    {/*messages block*/}
                     { messages.map(message =>
                         <div className={"message-block"}
                             style={{
@@ -47,6 +46,7 @@ const Chat = () => {
                                 marginLeft: user.uid === message.uid ? 'auto' : '10px',
                                 width: 'fit-content',
                                 padding: 5,
+                                borderRadius: 15
                             }}
                             >
                             <Grid container>

@@ -50,8 +50,13 @@ const Chat = () => {
                             }}
                             >
                             <Grid container>
-                                <Avatar src={message.photoURL}/>
-                                <div>{message.displayName}</div>
+                                <Avatar
+                                    src={message.photoURL}
+                                    style={{margin:5}}
+                                />
+                                <div
+                                    style={{display: "flex", alignItems: "center"}}
+                                >{message.displayName}</div>
                             </Grid>
                             <div>{message.text}</div>
                         </div>
